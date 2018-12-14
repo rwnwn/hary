@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const devs = ["393001448264302602"]; //الايدي حقك
-const adminprefix = ["#Ga"]; // البرفكس
+const adminprefix = ["Ga"]; // البرفكس
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
